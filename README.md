@@ -27,7 +27,7 @@ Create a landing page for yourself as a developer. This is a front end project, 
   - Also assign the `username` variable your GitHub username.
  - [Generate a GitHub Token](https://github.com/settings/tokens). Select only `public_repo` and `read:user`.
 - For reference, here is the [API Docs](https://developer.github.com/v3/) for GitHub.
-- Style your site applying any techniques you want from Friday demos.
+- Style your site.
 
 #### Back End
 - You have already been given a simple server. You shouldn't need to change the code but are welcome to make changes.
