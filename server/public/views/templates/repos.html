@@ -8,31 +8,30 @@
 </section>
 <div class="section">
     <div class="container">
-        <div class="field has-addons is-pulled-left">
+        <div class="field has-addons">
             <p class="control has-icons-left">
                 <input class="input is-small" type="text" placeholder="search repos" ng-model="rc.searchRepos">
-                <span class="icon is-small is-left">
-        <i class="fa fa-search"></i>
-      </span>
+                <span class="icon is-small is-left"><i class="fa fa-search"></i></span>
             </p>
         </div>
-
-        <table class="table table is-bordered is-striped is-fullwidth">
-            <thead>
-                <tr>
-                    <th>Repo</th>
-                    <th>Description</th>
-                    <th>Last Updated</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="repo in rc.repos.data | filter: rc.searchRepos | orderBy: vm.orderBy">
-                    <td>{{repo.name}} <a ng-href={{repo.html_url}} target="_blank"><span class="icon is-small"><i class="fa fa-external-link"></i></span></a></td>
-                    <td>{{repo.description}}</td>
-                    <td>{{repo.updated_at | date: longDate}}</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="columns is-multiline">
+            <div class="column is-one-third" ng-repeat="repo in rc.repos.data | filter: rc.searchRepos | orderBy: vm.orderBy">
+                <div class="box">
+                    <article class="media">
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>{{repo.name}}</strong> <a ng-href={{repo.html_url}} target="_blank"> <span class="icon is-small"><i class="fa fa-external-link"></i></span></a>
+                                    <br>
+                                    <span class="is-size-7">Last Updated: {{repo.updated_at | date: "shortDate"}}</span>
+                                    <p ng-if="repo.description">{{repo.description}}</p>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
 
         <p class="loading is-size-6 has-primary-text" ng-if="!rc.repos.data.length">Loading Repos . . .</p>
 
