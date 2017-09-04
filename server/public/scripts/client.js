@@ -13,10 +13,6 @@ PortfolioApp.config(function ($routeProvider, $locationProvider) {
       templateUrl: '/views/templates/repos.html',
       controller: 'RepoController as rc'
     })
-    .when('/resume', {
-      templateUrl: '/views/templates/resume.html',
-      controller: 'ResumeController as rc'
-    })
     .when('/past-work', {
       templateUrl: '/views/templates/past-work.html',
       controller: 'PastWorkController as pw'
