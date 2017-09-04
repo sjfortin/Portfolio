@@ -7,8 +7,8 @@ PortfolioApp.controller('PastWorkController', function () {
         image: 'comic-con-2017.png'
     },
     {
-        name: 'boston-scientific-smm.png',
-        image: 'boston-scientific-smm.png'
+        name: 'Disney Shanghai',
+        image: 'disney-shanghai.png'
     },
     {
         name: 'nbc-mcr.png',
@@ -19,6 +19,10 @@ PortfolioApp.controller('PastWorkController', function () {
         image: 'revista.png'
     },
     {
+        name: 'NBC WHCD',
+        image: 'nbc-whcd.png'
+    },
+    {
         name: 'clinton-foundation.png',
         image: 'clinton-foundation.png'
     },
@@ -27,8 +31,8 @@ PortfolioApp.controller('PastWorkController', function () {
         image: 'nbc-premier-league.png'
     },
     {
-        name: 'comic-con-2017.png',
-        image: 'comic-con-2017.png'
+        name: 'Cargill',
+        image: 'cargill.png'
     },
     {
         name: 'Disney Shanghai',
@@ -41,10 +45,6 @@ PortfolioApp.controller('PastWorkController', function () {
     {
         name: 'target-partner-summit.png',
         image: 'target-partner-summit.png'
-    },
-    {
-        name: 'disney-gcat.png',
-        image: 'disney-gcat.png'
     },
     {
         name: 'wells-fargo-livestream.png',
@@ -63,8 +63,28 @@ PortfolioApp.controller('PastWorkController', function () {
         image: 'patterson-gravity.png'
     },
     {
-        name: 'NBC Olympics',
-        image: 'nbc-olympic-summit.png'
+        name: 'NYLC',
+        image: 'nylc.png'
+    },
+    {
+        name: 'NBC Golden Globes',
+        image: 'nbc-golden-globes.png'
+    },
+    {
+        name: 'Disney - Adventures by Disney',
+        image: 'disney-abd.png'
+    },
+    {
+        name: 'boston-scientific-smm.png',
+        image: 'boston-scientific-smm.png'
+    },
+    {
+        name: 'Animal Health',
+        image: 'animal-health-nsm.png'
+    },
+    {
+        name: 'Comcast 2020',
+        image: 'comcast-leadership-summit.png'
     }
     ]
 
