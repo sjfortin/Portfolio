@@ -1,4 +1,4 @@
-myApp.service('GithubService', function($http) {
+PortfolioApp.service('GithubService', function($http) {
 
   // Object that will store our user data
   var user = {};
@@ -8,7 +8,7 @@ myApp.service('GithubService', function($http) {
       method: 'GET',
       url: '/github/user/',
     }).then(function(response) {
-      console.log(response.data);
+      console.log("User data", response.data);
       user.data = response.data;
     });
   }
@@ -16,13 +16,14 @@ myApp.service('GithubService', function($http) {
 
   // Object that will store our repo data
   var repos = {};
+  
   //Call to Github API to fetch list of user's repos
   function githubRepos(){
     $http({
       method: 'GET',
       url: '/github/repos/'
     }).then(function(response) {
-      console.log(response.data);
+      console.log("Repo data", response.data);
       repos.data = response.data;
     });
   }

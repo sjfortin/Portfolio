@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Projects</title>
-    <script src="vendors/angular.min.js" charset="utf-8"></script>
-    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
-    <script src="scripts/client.js" charset="utf-8"></script>
-    <script src="scripts/user.controller.js" charset="utf-8"></script>
-    <script src="scripts/github.service.js" charset="utf-8"></script>
-  </head>
-  <body ng-app="myApp">
-    <h1>Hello World</h1>
-    <main ng-view>
 
-    </main>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <title>Sam Fortin | Github Portfolio</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendors/bulma.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body ng-app="PortfolioApp">
+  <main ng-view>
+
+  </main>
+  
+  <!-- Angular  -->
+  <script src="vendors/angular.min.js"></script>
+  <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+
+  <script src="scripts/client.js"></script>
+
+  <!-- Controllers -->
+  <script src="scripts/user.controller.js" charset="utf-8"></script>
+  <script src="scripts/repo.controller.js" charset="utf-8"></script>
+  <script src="scripts/resume.controller.js" charset="utf-8"></script>
+
+  <!-- Services -->
+  <script src="scripts/github.service.js" charset="utf-8"></script>
+</body>
+
 </html>

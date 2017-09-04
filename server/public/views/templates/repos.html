@@ -1,0 +1,42 @@
+<div ng-include="'/views/partials/nav.html'"></div>
+<section class="hero is-dark">
+    <div class="hero-body has-text-centered">
+        <div class="container">
+            <h1 class="title">
+                Repositories
+            </h1>
+        </div>
+    </div>
+</section>
+<div class="section">
+    <div class="container">
+        <div class="field has-addons is-pulled-left">
+            <p class="control has-icons-left">
+                <input class="input is-small" type="text" placeholder="search repos"ng-model="rc.searchRepos">
+                <span class="icon is-small is-left">
+        <i class="fa fa-search"></i>
+      </span>
+            </p>
+        </div>
+
+        <table class="table table is-bordered is-striped is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Repo</th>
+                    <th>Description</th>
+                    <th>Last Updated</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="repo in rc.repos.data | filter: rc.searchRepos | orderBy: vm.orderBy">
+                    <td>{{repo.name}} <a ng-href={{repo.html_url}} target="_blank"><span class="icon is-small"><i class="fa fa-external-link"></i></span></a></td>
+                    <td>{{repo.description}}</td>
+                    <td>{{repo.updated_at | date: longDate}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="loading is-size-6 has-primary-text" ng-if="!rc.repos.data.length">Loading Repos . . .</p>
+
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<section class="hero is-dark is-fullheight">
+    <!-- Hero header: will stick at the top -->
+    <div class="hero-head">
+        <div ng-include="'/views/partials/nav.html'"></div>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title is-size-1-desktop is-uppercase">{{uc.user.data.name}}</h1>
+            <h2 class="subtitle is-size-3-desktop">{{uc.user.data.location}}</h2>
+            <h2 class="subtitle is-size-6-desktop">{{uc.user.data.bio}}</h2>
+            <h2 class="has-text-primary">JavaScript | HTML5 | CSS3 | AngularJS | Express | Node.js | MongoDB | PostgreSQL</h2>
+        </div>
+    </div>
+</section>
