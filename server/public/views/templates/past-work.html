@@ -3,88 +3,36 @@
 <section class="hero is-dark">
     <div class="hero-body has-text-centered">
         <div class="container">
-            <h1 class="title is-size-1 banner-heading-border">Past Work Samples</h1>
+            <h1 class="title is-size-1 banner-heading-border">Past Work</h1>
         </div>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
-        <p class="title is-3">metroConnections</p>
-        <p class="subtitle is-5">2013-2017</p>
-        <div class="tags">
-            <span class="tag">html</span>
+        <p class="title is-3">metroConnections <span class="tag">html</span>
             <span class="tag">css</span>
-            <span class="tag">javascript</span>
-        </div>
-        <div class="tile is-ancestor">
-            <div class="tile is-vertical is-6">
-                <div class="tile">
-                    <div class="tile is-parent is-vertical">
-                        <article class="tile is-child is-info">
-                            <figure>
-                                <img src="assets/screenshots/nbc-mcm.png">
-                            </figure>
-                        </article>
-                    </div>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child notification is-danger">
-                        <p class="title">Wide tile</p>
-                        <p class="subtitle">Aligned with the right tile</p>
-                        <div class="content">
-                            <!-- Content -->
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="tile is-parent">
+            <span class="tag">javascript</span></p>
+        <p class="subtitle is-5">2013-2017</p>
+
+        <div class="tile is-ancestor flex-wrap">
+            <div class="tile is-parent is-6" ng-repeat="client in pw.desktop">
                 <article class="tile is-child">
-                    <figure class="image is-4by3">
-                        <img src="assets/screenshots/boston-scientific-smm.png">
+                    <figure class="image">
+                        <img ng-src="assets/screenshots/{{client.image}}">
+                    </figure>
+                </article>
+            </div>
+        </div>
+        <div class="tile is-ancestor flex-wrap">
+            <div class="tile is-parent is-3" ng-repeat="client in pw.mobile">
+                <article class="tile is-child">
+                    <figure class="image">
+                        <img ng-src="assets/screenshots/{{client.image}}">
                     </figure>
                 </article>
             </div>
         </div>
     </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <p class="title is-3">L & L Management Services</p>
-        <p class="subtitle is-5">2013-2017</p>
-        <div class="tags">
-            <span class="tag">print design</span>
-            <span class="tag">movile app management</span>
-        </div>
-        <div class="tile is-ancestor">
-            <div class="tile is-vertical is-6">
-                <div class="tile">
-                    <div class="tile is-parent is-vertical">
-                        <article class="tile is-child is-info">
-                            <figure>
-                                <img src="assets/screenshots/nbc-mcm.png">
-                            </figure>
-                        </article>
-                    </div>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child notification is-danger">
-                        <p class="title">Wide tile</p>
-                        <p class="subtitle">Aligned with the right tile</p>
-                        <div class="content">
-                            <!-- Content -->
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="tile is-parent">
-                <article class="tile is-child">
-                    <figure class="image is-4by3">
-                        <img src="assets/screenshots/boston-scientific-smm.png">
-                    </figure>
-                </article>
-            </div>
-        </div>
     </div>
 </section>

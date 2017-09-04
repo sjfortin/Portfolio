@@ -3,3 +3,30 @@
     padding: 5px 10px;
     display: inline;
 }
+
+.hero.is-dark .nav {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.hero .nav {
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.box {
+    background-color: white;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #4a4a4a;
+    display: block;
+    padding: 1.25rem;
+    border: 1px solid #e7e7e7;
+    height: 100%;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
