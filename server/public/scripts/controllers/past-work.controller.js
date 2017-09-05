@@ -35,24 +35,20 @@ PortfolioApp.controller('PastWorkController', function () {
         image: 'cargill.png'
     },
     {
-        name: 'Disney Shanghai',
-        image: 'disney-shanghai.png'
+        name: 'target-partner-summit.png',
+        image: 'target-partner-summit.png'
+    },
+    {
+        name: 'nbc-mcm.png',
+        image: 'nbc-mcm.png'
     },
     {
         name: 'digital-river-livestream.png',
         image: 'digital-river-livestream.png'
     },
     {
-        name: 'target-partner-summit.png',
-        image: 'target-partner-summit.png'
-    },
-    {
         name: 'wells-fargo-livestream.png',
         image: 'wells-fargo-livestream.png'
-    },
-    {
-        name: 'nbc-mcm.png',
-        image: 'nbc-mcm.png'
     },
     {
         name: 'pentair-glm.png',
@@ -75,17 +71,18 @@ PortfolioApp.controller('PastWorkController', function () {
         image: 'disney-abd.png'
     },
     {
-        name: 'boston-scientific-smm.png',
-        image: 'boston-scientific-smm.png'
+        name: 'Comcast 2020',
+        image: 'comcast-leadership-summit.png'
     },
     {
         name: 'Animal Health',
         image: 'animal-health-nsm.png'
     },
     {
-        name: 'Comcast 2020',
-        image: 'comcast-leadership-summit.png'
+        name: 'boston-scientific-smm.png',
+        image: 'boston-scientific-smm.png'
     }
+    
     ]
 
     vm.mobile = [
