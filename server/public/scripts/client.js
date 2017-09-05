@@ -13,8 +13,8 @@ PortfolioApp.config(function ($routeProvider, $locationProvider) {
       templateUrl: '/views/templates/repos.html',
       controller: 'RepoController as rc'
     })
-    .when('/past-work', {
-      templateUrl: '/views/templates/past-work.html',
+    .when('/work-samples', {
+      templateUrl: '/views/templates/work-samples.html',
       controller: 'PastWorkController as pw'
     })
     .otherwise({
