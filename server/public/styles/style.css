@@ -36,3 +36,10 @@
     border: 1px solid #e7e7e7;
     padding: 7px;
 }
+
+@media screen and (max-width: 768px) {
+    .level-left .level-item:not(:last-child),
+    .level-right .level-item:not(:last-child) {
+        margin-right: 0;
+    }
+}
