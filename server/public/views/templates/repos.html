@@ -15,7 +15,7 @@
             </p>
         </div>
         <div class="columns is-multiline">
-            <div class="column is-one-third" ng-repeat="repo in rc.repos.data | filter: rc.searchRepos | orderBy: vm.orderBy">
+            <div class="column is-one-third" ng-repeat="repo in rc.repos.data | filter: rc.searchRepos | orderBy: vm.orderBy" ng-if="repo.description">
                 <div class="box">
                     <article class="media">
                         <div class="media-content">
@@ -24,7 +24,7 @@
                                     <strong>{{repo.name}}</strong> <a ng-href={{repo.html_url}} target="_blank"> <span class="icon is-small"><i class="fa fa-external-link"></i></span></a>
                                     <br>
                                     <span class="is-size-7">Last Updated: {{repo.updated_at | date: "shortDate"}}</span>
-                                    <p ng-if="repo.description">{{repo.description}}</p>
+                                    <p>{{repo.description}}</p>
                                 </p>
                             </div>
                         </div>
