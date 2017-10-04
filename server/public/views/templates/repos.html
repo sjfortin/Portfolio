@@ -45,7 +45,7 @@
                                     <span class="is-size-7">Date Last Push: {{repo.pushed_at | date: "shortDate"}}</span>
                                 </p>
                                 <p>{{repo.description}}</p>
-                                <p ng-if="repo.homepage"><a ng-href="{{repo.homepage}}">{{repo.homepage}}</a></p>
+                                <p ng-if="repo.homepage"><a ng-href="{{repo.homepage}}" target="_blank">{{repo.homepage}}</a></p>
 
                             </div>
                         </div>
