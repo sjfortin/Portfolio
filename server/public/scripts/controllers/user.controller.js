@@ -10,4 +10,18 @@ PortfolioApp.controller('UserController', function(GithubService){
       vm.hamburgerStatus = '';
     }
   }
+  vm.techList = [
+    'Javascript',
+    'jQuery',
+    'AngularJS',
+    'Express',
+    'Node.js',
+    'Bootstrap',
+    'Angular Material',
+    'Bulma',
+    'HTML5',
+    'CSS3',
+    'MongoDB',
+    'PostgreSQL'
+  ]
 });

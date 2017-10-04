@@ -31,6 +31,10 @@
     flex-wrap: wrap;
 }
 
+.tag {
+    margin-right: 5px;
+}
+
 .work-sample img {
     /* border-radius: 6px; */
     border: 1px solid #e7e7e7;
@@ -41,5 +45,11 @@
     .level-left .level-item:not(:last-child),
     .level-right .level-item:not(:last-child) {
         margin-right: 0;
+    }
+
+}
+@media screen and (max-width: 1008px) {
+    .tag {
+        margin-top: 10px;
     }
 }
