@@ -13,9 +13,9 @@ PortfolioApp.config(function ($routeProvider, $locationProvider) {
       templateUrl: '/views/templates/repos.html',
       controller: 'RepoController as rc'
     })
-    .when('/work-samples', {
-      templateUrl: '/views/templates/work-samples.html',
-      controller: 'PastWorkController as pw'
+    .when('/portfolio', {
+      templateUrl: '/views/templates/portfolio.html',
+      controller: 'PortfolioController as pc'
     })
     .otherwise({
       redirectTo: '/home'

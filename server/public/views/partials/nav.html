@@ -1,19 +1,29 @@
-<nav class="nav" ng-controller="UserController as uc">
+<nav class="navbar is-dark" ng-controller="UserController as uc">
     <div class="container is-fluid">
-        <div class="nav-left">
-            <a class="nav-item" href="#/home">Sam Fortin</a>
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#/home">Sam Fortin</a>
+            <div class="navbar-burger burger {{uc.hamburgerStatus}}" ng-click="uc.changeHamburgerStatus()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <span class="nav-toggle" id="nav-toggle" ng-click="uc.changeHamburgerStatus()">
-                    <span></span>
-        <span></span>
-        <span></span>
-        </span>
-        <div class="nav-right nav-menu {{uc.hamburgerStatus}}" id="nav-menu">
-            <a class="nav-item" href="#/repos">Github Repos</a>
-            <a class="nav-item" href="#/work-samples">Work Samples</a>
-            <a class="nav-item" href="../../assets/docs/sam_fortin_resume.pdf" target="_blank">Resume</a>
-            <a class="nav-item" href="https://github.com/sjfortin" target="_blank"><span class="icon"><i class="fa fa-github"></i></span></a>
-            <a class="nav-item" href="https://linkedin.com/in/samfortin" target="_blank"><span class="icon"><i class="fa fa-linkedin"></i></span></a>
+        <div class="navbar-menu {{uc.hamburgerStatus}}" id="nav-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#/portfolio">Portfolio</a>
+                <a class="navbar-item" href="#/repos">Repos</a>
+                <a class="navbar-item" href="../../assets/docs/sam_fortin_resume.pdf" target="_blank">Resume</a>
+                <a class="navbar-item" href="https://github.com/sjfortin" target="_blank">
+                    <span class="icon">
+                        <i class="fa fa-github"></i>
+                    </span>
+                </a>
+                <a class="navbar-item" href="https://linkedin.com/in/samfortin" target="_blank">
+                    <span class="icon">
+                        <i class="fa fa-linkedin"></i>
+                    </span>
+                </a>
+            </div>
         </div>
     </div>
 </nav>

@@ -1,25 +1,15 @@
-<div ng-include="'/views/partials/nav.html'"></div>
-
-<section class="hero is-dark">
-    <div class="hero-body has-text-centered">
-        <div class="container">
-            <h1 class="title is-size-1-desktop banner-heading-border">Work Samples</h1>
-        </div>
-    </div>
-</section>
-
 <section class="section work-sample">
     <div class="container is-fluid">
-        <p class="title is-3">metroConnections 
-            <span class="tag is-primary">web design</span>
+        <p class="title is-3">metroConnections
+            <!-- <span class="tag is-primary">web design</span>
             <span class="tag is-primary">front-end</span>
             <span class="tag is-primary">conferences</span>
-            <span class="tag is-primary">events</span>
+            <span class="tag is-primary">events</span> -->
         </p>
-        <p class="subtitle is-5">2013-2017</p>
+        <p class="subtitle is-5">August 2013 - July 2017</p>
 
         <div class="tile is-ancestor flex-wrap">
-            <div class="tile is-parent is-6" ng-repeat="client in pw.desktop">
+            <div class="tile is-parent is-6" ng-repeat="client in pc.desktop">
                 <article class="tile is-child">
                     <figure class="image">
                         <img ng-src="assets/screenshots/{{client.image}}">
@@ -28,7 +18,7 @@
             </div>
         </div>
         <div class="tile is-ancestor flex-wrap">
-            <div class="tile is-parent is-3" ng-repeat="client in pw.mobile">
+            <div class="tile is-parent is-3" ng-repeat="client in pc.mobile">
                 <article class="tile is-child">
                     <figure class="image">
                         <img ng-src="assets/screenshots/{{client.image}}">

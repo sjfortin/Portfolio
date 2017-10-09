@@ -1,0 +1,23 @@
+<div ng-include="'/views/partials/nav.html'"></div>
+
+<section class="hero is-dark is-bold">
+    <div class="hero-body">
+        <div class="container is-fluid">
+            <h1 class="title is-size-1-desktop banner-heading-border">Work Samples</h1>
+        </div>
+    </div>
+</section>
+
+<div class="container is-fluid">
+    <div class="tabs">
+        <ul>
+            <li ng-class="{'is-active': pc.currentTab == 'prime'}"><a ng-click="pc.currentTab = 'prime'">Prime Digital Academy</a></li>
+            <li ng-class="{'is-active': pc.currentTab == 'metroconnections'}"><a ng-click="pc.currentTab = 'metroconnections'">Professional Work</a></li>
+            <li ng-class="{'is-active': pc.currentTab == 'personal'}"><a ng-click="pc.currentTab = 'personal'">Personal</a></li>
+        </ul>
+    </div>
+</div>
+
+<div ng-include="'/views/partials/prime.html'" ng-if="pc.currentTab == 'prime'"></div>
+<div ng-include="'/views/partials/metroconnections.html'" ng-if="pc.currentTab == 'metroconnections'"></div>
+<div ng-include="'/views/partials/personal.html'" ng-if="pc.currentTab == 'personal'"></div>

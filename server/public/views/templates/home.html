@@ -1,20 +1,21 @@
-<section class="hero is-dark is-fullheight">
-    <!-- Hero header: will stick at the top -->
+<section class="hero is-dark is-fullheight is-bold">
     <div class="hero-head">
         <div ng-include="'/views/partials/nav.html'"></div>
     </div>
 
-    <!-- Hero content: will be in the middle -->
     <div class="hero-body">
         <div class="container has-text-centered">
             <h1 class="is-size-1 is-size-2-mobile banner-heading-border">Sam Fortin</h1>
             <br><br>
-            <h1 class="title is-size-3-desktop">{{uc.user.data.location}}</h1>
-            <h2 class="subtitle is-size-5-desktop">{{uc.user.data.bio}}</h2>
-            <h2 class="has-text-primary">JavaScript | AngularJS | jQuery | HTML5 | CSS3 | Angular Material | Boostrap | Bulma | Express | Node.js | MongoDB | PostgreSQL</h2>
-            <!-- <div class="has-text-centered">
+            <h1 class="title is-size-3-desktop">Minneapolis, MN</h1>
+            <h2 class="subtitle is-size-5-desktop">Full Stack Web Developer</h2>
+            <p>Recent graduate of the Full Stack Engineering bootcamp at Prime Digital Academy.</p>
+            <p>Previously a Web Designer in the conference and event industry.</p>
+            <p>Currently looking for new opportunities.</p>
+            <br>
+            <div class="has-text-centered">
                 <span ng-repeat="tech in uc.techList" class="tag is-primary">{{tech}}</span>
-            </div> -->
+            </div>
         </div>
     </div>
 </section>

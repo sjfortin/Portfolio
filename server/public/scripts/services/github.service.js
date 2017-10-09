@@ -8,7 +8,6 @@ PortfolioApp.service('GithubService', function($http) {
       method: 'GET',
       url: '/github/user/',
     }).then(function(response) {
-      console.log("User data", response.data);
       user.data = response.data;
     });
   }
@@ -23,7 +22,6 @@ PortfolioApp.service('GithubService', function($http) {
       method: 'GET',
       url: '/github/repos/'
     }).then(function(response) {
-      console.log("Repo data", response.data);
       repos.data = response.data;
     });
   }

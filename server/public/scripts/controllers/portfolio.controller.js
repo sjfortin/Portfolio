@@ -1,7 +1,12 @@
-PortfolioApp.controller('PastWorkController', function () {
-    console.log('PastWorkController loaded.')
+PortfolioApp.controller('PortfolioController', function () {
     var vm = this;
 
+    // Initial tab on page load
+    vm.currentTab = 'prime';
+    vm.currentPage = '';
+
+
+    // metroConnections desktop screenshots
     vm.desktop = [{
         name: 'Comic Con',
         image: 'comic-con-2017.png'
@@ -82,9 +87,10 @@ PortfolioApp.controller('PastWorkController', function () {
         name: 'boston-scientific-smm.png',
         image: 'boston-scientific-smm.png'
     }
-    
+
     ]
 
+    // metroConnections mobile screenshots
     vm.mobile = [
         {
             name: 'beautycounter',
