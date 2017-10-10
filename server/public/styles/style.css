@@ -77,6 +77,14 @@ body {
     color: #58A4B0 !important;
 }
 
+.portfolio-heading {
+    text-align: center;
+    margin: 20px 0 10px 0 !important;
+    background: #58A4B0;
+    color: #fff;
+    padding: 8px 20px;
+}
+
 @media screen and (max-width: 768px) {
     .level-left .level-item:not(:last-child),
     .level-right .level-item:not(:last-child) {

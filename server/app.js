@@ -4,7 +4,7 @@ var path = require('path');
 var app = express();
 
 // set port to deployment variable or local environment
-var port = process.env.PORT || 5000; 
+var port = process.env.PORT || 3000; 
 
 // serve static public files
 app.use(express.static('server/public')); 

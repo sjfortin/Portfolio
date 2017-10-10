@@ -36,20 +36,12 @@ PortfolioApp.controller('PortfolioController', function () {
         image: 'nbc-premier-league.png'
     },
     {
-        name: 'Cargill',
-        image: 'cargill.png'
-    },
-    {
         name: 'target-partner-summit.png',
         image: 'target-partner-summit.png'
     },
     {
         name: 'nbc-mcm.png',
         image: 'nbc-mcm.png'
-    },
-    {
-        name: 'digital-river-livestream.png',
-        image: 'digital-river-livestream.png'
     },
     {
         name: 'wells-fargo-livestream.png',

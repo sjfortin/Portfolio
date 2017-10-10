@@ -1,0 +1,72 @@
+<section class="section work-sample">
+    <div class="container is-fluid">
+        <p class="title is-3">metroConnections</p>
+        <p class="subtitle is-5">August 2013 - July 2017</p>
+        <br>
+        <p class="title is-3 portfolio-heading">Highlighted Projects</p>
+        <div class="columns">
+            <div class="column is-half">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image">
+                            <img src="../../assets/screenshots/metroconnections/clinton-foundation-ticker-onsite.JPG" alt="Twitter Ticker">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Clinton Foundation - Twitter Ticker</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Created a scrolling tweet ticker that was displayed above the stage at the 2016 Clinton Foundation Health Matters conference.
+                            Combined a jQuery webticker and Twitter REST api post fetcher to create the ticker functionality.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-half">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="../../assets/screenshots/metroconnections/livestream.JPG" alt="Live Stream">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Live Stream User Authenication</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            Implemented a user authentication site to log users in to view a live web stream. Technologies Used: JavaScript, PHP, MySQL,
+                            Bootstrap, an embedded web stream provided by livestream.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="title is-3 portfolio-heading portfolio-heading">Web Design</p>
+        <div class="tile is-ancestor flex-wrap">
+            <div class="tile is-parent is-6" ng-repeat="client in pc.desktop">
+                <article class="tile is-child">
+                    <figure class="image">
+                        <img ng-src="assets/screenshots/{{client.image}}">
+                    </figure>
+                </article>
+            </div>
+        </div>
+        <p class="title is-3 portfolio-heading portfolio-heading">Responsive and Mobile Design</p>
+        <div class="tile is-ancestor flex-wrap">
+            <div class="tile is-parent is-3" ng-repeat="client in pc.mobile">
+                <article class="tile is-child">
+                    <figure class="image">
+                        <img ng-src="assets/screenshots/{{client.image}}">
+                    </figure>
+                </article>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
