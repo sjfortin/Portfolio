@@ -55,6 +55,10 @@ body {
     padding: 7px;
 }
 
+.full-height {
+    height: 100%;
+}
+
 .navbar-item,
 .navbar-link {
     color: #D8DBE2;
