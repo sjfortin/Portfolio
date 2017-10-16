@@ -1,13 +1,13 @@
 <div ng-include="'/views/partials/nav.html'"></div>
 <section class="hero is-bold">
     <div class="hero-body">
-        <div class="container">
+        <div class="container is-fluid has-text-centered">
             <h1 class="title is-size-1-desktop banner-heading-border">Github Repos</h1>
         </div>
     </div>
 </section>
 <div class="section">
-    <div class="container">
+    <div class="container is-fluid">
         <nav class="level">
             <div class="level-left">
                 <div class="level-item">
@@ -20,7 +20,7 @@
             </div>
         </nav>
         <div class="columns is-multiline">
-            <div class="column is-one-third" ng-repeat="repo in rc.repos.data | filter: rc.searchRepos | orderBy: rc.orderBy" ng-if="repo.description">
+            <div class="column is-one-third repo" ng-repeat="repo in rc.repos.data | filter: rc.searchRepos | orderBy: rc.orderBy" ng-if="repo.description">
                 <div class="box">
                     <article class="media">
                         <div class="media-content">
@@ -44,3 +44,4 @@
 
     </div>
 </div>
+<div ng-include="'/views/partials/footer.html'"></div>

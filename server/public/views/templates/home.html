@@ -1,21 +1,22 @@
-<section class="hero is-fullheight is-bold">
+<section class="hero is-bold">
     <div class="hero-head">
         <div ng-include="'/views/partials/nav.html'"></div>
     </div>
 
     <div class="hero-body">
-        <div class="container has-text-centered">
-            <h1 class="is-size-1 is-size-2-mobile home-border">Sam Fortin</h1>
-            <br><br>
-            <h1 class="title is-size-3-desktop">Minneapolis, MN</h1>
-            <h2 class="subtitle is-size-5-desktop">Full Stack Web Developer</h2>
-            <p>Soon to be graduate of the Full Stack Web Development bootcamp at Prime Digital Academy.</p>
-            <p>Former web designer in the conference and event industry.</p>
-            <p>Currently looking for new opportunities.</p>
-            <br>
+        <div class="container is-fluid has-text-centered">
+            <div class="content">
+                <h1 class="is-size-1 is-size-2-mobile banner-heading-border">Sam Fortin</h1>
+                <h1 class="title is-size-3-desktop">Minneapolis, MN</h1>
+                <h2 class="subtitle is-size-5-desktop">Full Stack Web Developer</h2>
+                <p>Soon to be graduate of the Full Stack Web Development bootcamp at Prime Digital Academy.</p>
+                <p>Former web designer in the conference and event industry.</p>
+                <p>Currently looking for new opportunities.</p>
+            </div>
             <div class="has-text-centered">
                 <span ng-repeat="tech in uc.techList" class="tag is-primary">{{tech}}</span>
             </div>
         </div>
     </div>
 </section>
+<div ng-include="'/views/partials/footer.html'"></div>
