@@ -5,7 +5,6 @@ PortfolioApp.controller('UserController', ['$location', function (GithubService,
 
   vm.linkedin_url = 'https://www.linkedin.com/in/samfortin/';
 
-
   // Active/Deactivate Hamburger Menu
   vm.changeHamburgerStatus = function () {
     if (vm.hamburgerStatus !== 'is-active') {

@@ -5,7 +5,7 @@ PortfolioApp.controller('RepoController', ['GithubService', function (GithubServ
     vm.orderBy = '-pushed_at';
 
     vm.orderByRepoName = function () {
-        if (vm.orderBy === 'name') {
+    if (vm.orderBy === 'name') {
             vm.orderBy = '-name';
         } else {
             vm.orderBy = 'name';
